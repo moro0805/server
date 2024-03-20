@@ -7,7 +7,7 @@ port_num = "21124" #�??��邀咲�?蜿?��
 
 @app.route('/',methods=['GET'])
 def get_html():
-    return render_templete('./index.html')
+    return render_template('./index.html')
 @app.route('/lux',methods=['POST'])
 def update_lux():
     time = request.form["time"]
