@@ -1,3 +1,4 @@
+coding=UTF-8
 import sys
 sys.path.append("/Users/諸川博之/AppData/Local/Programs/Python/Python311/Lib/site-packages")
 from flask import Flask, request, render_template
