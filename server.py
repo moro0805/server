@@ -1,9 +1,9 @@
 import sys
-sys.path.append("/Users/諸川博之/AppData/Local/Programs/Python/Python311/Lib/site-packages")
-from flask import Flask,request,render_template
+sys.path.append("/Users/諸川博�?/AppData/Local/Programs/Python/Python311/Lib/site-packages")
+from flask import Flask, request, render_template
 app = Flask(__name__)
 file_path = "./sensor_data.csv"
-port_num = "21124" #蟄ｦ邀咲分蜿ｷ
+port_num = "21124" #�??��邀咲�?蜿?��
 
 @app.route('/',methods=['GET'])
 def get_html():
