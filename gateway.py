@@ -11,6 +11,7 @@ is_first = True
 while True: 
     now = datetime.datetime.now().strftime('%Y/%m/%d %H:%M') 
     lux = ser.readline().decode('utf-8').splitlines() 
+    print("テスト出力" + lux)
     data['time'] = now 
 
     data['lux'] = lux 
