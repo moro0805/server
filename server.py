@@ -12,9 +12,10 @@ def get_html():
 def update_lux():
     time = request.form["time"]
     lux = request.form["lux"]
+    lux.split(',')
     try:
         f = open(file_path, 'w')
-        f.write(lux)#timeを消してみる
+        f.write(time + "," +lux[1]) #ここいじるとサイトで表示される内容変わる
         return "succeeded to write"
     except Exception as e:
         print(e)
