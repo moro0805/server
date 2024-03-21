@@ -15,7 +15,7 @@ def update_lux():
     lux.split(',')
     try:
         f = open(file_path, 'w')
-        f.write(time + "\n" + "距離 : " + lux) #ここいじるとサイトで表示される内容変わる
+        f.write(time + "  " + "距離 : " + lux) #ここいじるとサイトで表示される内容変わる
         return "succeeded to write"
     except Exception as e:
         print(e)
