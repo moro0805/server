@@ -3,11 +3,12 @@
     <head> 
         <title>テストアプリ</title> 
         <script> 
+        <h1>目の前に座っているかを判定します。</h1>
         const updateLux = async(url, element) => { 
         const sensorData = await fetch(url) 
         .then(response => response.text()) 
         const target = document.getElementById(element) 
-        target.innerHTML = `<h4>${sensorData}</h4>` 
+        target.innerHTML = `<h1>${sensorData}</h1>` 
         } 
         </script> 
     </head> 
