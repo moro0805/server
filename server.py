@@ -10,7 +10,7 @@ def get_html():
     return render_template('./index.html')
 @app.route('/lux',methods=['POST'])
 def update_lux():
-    time = request.form["time"]
+    time = "TEST"
     lux = request.form["lux"]
     try:
         f = open(file_path, 'w')
